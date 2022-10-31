@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
         child: Center(
             child: Container(
           height: 900,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               image: DecorationImage(
                   filterQuality: FilterQuality.medium,
                   fit: BoxFit.cover,
@@ -35,18 +35,19 @@ class _HomeState extends State<Home> {
               Container(
                 alignment: Alignment.topCenter,
                 child: CircleAvatar(
-                    radius: 100,
-                    backgroundColor: Colors.white,
-                    child: Image(
-                      image: AssetImage("images/Owl.png"),
-                    )),
+                  radius: 100,
+                  backgroundColor: Colors.white,
+                  child: Image(
+                    image: AssetImage("images/Owl.png"),
+                  ),
+                ),
               ),
               SizedBox(
                 height: 100,
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    onPrimary: Color.fromARGB(255, 99, 61, 5),
+                    onPrimary: Color.fromARGB(255, 27, 25, 21),
                     primary: Color.fromARGB(255, 253, 191, 99)),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(
